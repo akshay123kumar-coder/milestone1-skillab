@@ -1,38 +1,252 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* General container styling */
 .App {
   text-align: center;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header styles */
+header {
+  background-color: #ff7f50;
+  padding: 1em;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header h1 {
+  font-size: 2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header nav {
+  margin-top: 0.5em;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1em;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer nav a {
+  color: #ff7f50;
+  text-decoration: none;
+  margin: 0 0.5em;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
+
+/* Home page styles */
+.home {
+  padding: 2em;
+}
+
+.home h1 {
+  color: #333;
+}
+
+.home p {
+  margin: 1em 0;
+  font-size: 1.2em;
+}
+
+/* Menu page styles */
+.menu {
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu h1 {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.menu-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em;
+  width: 250px;
+  text-align: left;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.menu-item h2 {
+  font-size: 1.5em;
+  color: #ff7f50;
+  margin: 0.5em 0;
+}
+
+.menu-item p {
+  color: #555;
+}
+
+.menu-item button {
+  background-color: #ff7f50;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+
+.menu-item button:hover {
+  background-color: #ff6347;
+}
+
+/* Cart styles */
+.cart {
+  padding: 2em;
+}
+
+.cart h2 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+.cart div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 0;
+}
+
+.cart button {
+  background-color: #ff7f50;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart button:hover {
+  background-color: #ff6347;
+}
+
+/* Contact page styles */
+.contact {
+  padding: 2em;
+}
+
+.contact form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.contact input,
+.contact textarea,
+.contact button {
+  width: 80%;
+  max-width: 500px;
+  padding: 0.5em;
+  font-size: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact button {
+  background-color: #ff7f50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #ff6347;
+}
+
+/* About Us page styles */
+.about-us {
+  padding: 2em;
+}
+
+.about-us h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.about-us p {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 1em;
+}
+
+/* Sign Up / Login page styles */
+.signup-login {
+  padding: 2em;
+}
+
+.signup-login h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.signup-login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.signup-login input,
+.signup-login button {
+  width: 80%;
+  max-width: 400px;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.signup-login button {
+  background-color: #ff7f50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signup-login button:hover {
+  background-color: #ff6347;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu {
+      flex-direction: column;
+      align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .menu-item {
+      width: 80%;
   }
 }

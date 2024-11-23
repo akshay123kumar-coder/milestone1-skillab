@@ -1,0 +1,76 @@
+/* src/pages/Home.css */
+
+.home {
+    padding: 2em;
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    color: #ff7f50;
+    margin: 0.5em 0;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Special Dishes Section Styles */
+.special-dishes {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.special-dishes h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.dish {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.dish-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 1em;
+}
+
+.dish-text h3 {
+    font-size: 1.8em;
+    color: #ff7f50;
+    margin: 0.5em 0;
+}
+
+.dish-text p {
+    font-size: 1em;
+    color: #555;
+    max-width: 400px;
+    text-align: left;
+}
